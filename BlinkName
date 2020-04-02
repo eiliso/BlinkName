@@ -1,0 +1,54 @@
+// wired LED
+int led1 = D6;
+
+void dot(int led)
+{
+  digitalWrite(led, HIGH);
+  delay(500);
+  digitalWrite(led, LOW);
+}
+
+void dash(int led)
+{
+    digitalWrite(led, HIGH);
+    delay(1500);
+    digitalWrite(led, LOW);
+}
+
+void setup() {
+  pinMode(led1, OUTPUT);
+
+}
+
+void loop() {
+  //E
+  dot(led1);
+  delay(1500);
+  //I
+  dot(led1);
+  delay(500);
+  dot(led1);
+  delay(1500);
+  //L
+  dot(led1);
+  delay(500);
+  dash(led1);
+  delay(500);
+  dot(led1);
+  delay(500);
+  dot(led1);
+  delay(1500);
+  //I
+  dot(led1);
+  delay(500);
+  dot(led1);
+  delay(1500);
+  //S
+  dot(led1);
+  delay(500);
+  dot(led1);
+  delay(500);
+  dot(led1);
+  delay(3500);
+
+}
